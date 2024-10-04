@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Binance Market Data WebSocket</title>
+  <link rel="shortcut icon" href="https://play-lh.googleusercontent.com/T1_WHAGs5WZePQejNSqqrxZah4uhBvYr698nTCFhXMjMZo5oSCoko5yW2wtmeO1ClRU" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Binance Market Data WebSocket</h1>
+    
+
+    <div class="controls">
+      <label for="coinSelect">Select Coin:</label>
+      <select id="coinSelect">
+        <option value="ETHUSDT">ETH/USDT</option>
+        <option value="BNBUSDT">BNB/USDT</option>
+        <option value="DOTUSDT">DOT/USDT</option>
+      </select>
+
+      <label for="timeframeSelect">Select Timeframe:</label>
+      <select id="timeframeSelect">
+        <option value="1">1 Minute</option>
+        <option value="3">3 Minutes</option>
+        <option value="5">5 Minutes</option>
+      </select>
+    </div>
+
+   
+    <div id="chartContainer" class="chart-container"></div>
+  </div>
+
+  <script src="https://s3.tradingview.com/tv.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
